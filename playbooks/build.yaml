@@ -5,9 +5,9 @@
   tasks:
     - name: Building Docker Image
       docker_image:
-         name: admin-jenkins:latest #docker image name
-         source: build
-         build:
-            path: ~/admin-jenkins #path ที่เก็บไฟล์ sourcecode 
-         state: present
-         force_source: true
+        name: admin-jenkins:latest  # Docker image name
+        source: build
+        build:
+          path: /root/admin-jenkins  # Path ที่เก็บไฟล์ source code
+        state: present
+        force_source: true
